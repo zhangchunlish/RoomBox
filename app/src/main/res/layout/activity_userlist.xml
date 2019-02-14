@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/include_toolbar" />
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/user_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/user_listview_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无有效用户"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceLarge">
+        </TextView>
+    </LinearLayout>
+    <include layout="@layout/include_navigation" />
+
+</android.support.v4.widget.DrawerLayout>

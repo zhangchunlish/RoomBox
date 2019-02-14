@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Room Box</string>
+    <string name="user_logout">退出登录</string>
+    <string name="pwd_modify">修改密码</string>
+    <string name="settings">Settings</string>
+    <string name="lorem_ipsum">Sugar plum sugar plum gummies donut jelly powder. Icing muffin cheesecake liquorice wafer bonbon. Bonbon tootsie roll halvah. Lollipop macaroon bear claw chocolate cake. Chocolate bar gummi bears candy cheesecake icing oat cake. Cake chocolate cake liquorice pie. Donut halvah lollipop. Bear claw lollipop sweet roll cookie dragée dragée donut candy. Cheesecake liquorice marzipan dragée muffin chocolate dessert jujubes. Cupcake ice cream tootsie roll bonbon croissant gingerbread ice cream danish. Jelly beans donut jujubes sugar plum. Tootsie roll tiramisu chupa chups dragée cheesecake brownie chocolate bar chocolate bar icing. Apple pie cake carrot cake gingerbread candy canes</string>
+    <string name="article_detail_more_info">More Info</string>
+
+
+    <string name="samples_title">Hello title</string>
+    <string name="samples_subhead">Hello Subhead</string>
+    <string name="samples_hint_username">Username</string>
+    <string name="samples_hint_email">E-Mail</string>
+
+
+    <string name="navigation_title">XFF HOUSE</string>
+    <string name="navigation_quotes">Room Box</string>
+    <string name="navigation_samples">Room Regist</string>
+    <string name="navigation_user">User List</string>
+    <string name="navigation_settings">User Settings</string>
+    <string name="navigation_sub_items">Sub items</string>
+    <string name="navigation_dummy_item_1">Dummy item 1</string>
+    <string name="navigation_dummy_item_2">Dummy item 2</string>
+
+
+    <!-- 注册 -->
+    <string name="text_regist_userName">用\u0020\u0020户\u0020\u0020名:</string>
+    <string name="text_regist_nickName">昵\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020称:</string>
+    <string name="text_regist_pwd">密\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020码:</string>
+    <string name="text_regist_confirmPwd">确认密码:</string>
+    <string name="text_menu_regist_title">注册用户</string>
+    <string name="text_hint_regist_userName">请输入用户名</string>
+    <string name="text_hint_regist_nickName">请输入昵称</string>
+    <string name="text_hint_regist_pwd">6~20位字母、数字、符号</string>
+    <string name="text_hint_regist_rpwd">重复密码</string>
+
+    <!-- 登陆 -->
+    <string name="text_login_btn">登\u0020\u0020录</string>
+    <string name="text_regist_btn">注\u0020\u0020册</string>
+    <string name="text_login_userName">用户名:</string>
+    <string name="text_login_pwd">密\u0020\u0020\u0020\u0020码:</string>
+    <string name="text_hint_login_pwd">6~20位字母、数字、符号</string>
+    <string name="text_hint_login_userName">手机号/邮箱/昵称</string>
+
+    <!--注册room -->
+    <string name="text_regist_room_id">房间编号:</string>
+    <string name="text_regist_room_address">位置信息:</string>
+    <string name="text_regist_room_username">用\u0020\u0020户\u0020\u0020名:</string>
+    <string name="text_regist_room_pwd">密\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020码:</string>
+    <string name="text_regist_room_creator">创\u0020\u0020建\u0020\u0020人:</string>
+    <string name="text_regist_room_confirmPwd">确认密码:</string>
+    <string name="text_menu_regist_room_title">注册房间</string>
+    <string name="text_hint_regist_room_id">请输入房间编号</string>
+    <string name="text_hint_regist_room_address">请输入位置信息</string>
+    <string name="text_hint_regist_room_username">请输入用户名</string>
+    <string name="text_hint_regist_room_pwd">6~8位数字</string>
+    <string name="text_hint_regist_room_rpwd">重复密码</string>
+    <string name="text_regist_room_btn">保存</string>
+    <string name="text_modify_room_btn">修改</string>
+
+    <string name="text_add_room_btn">新增房间</string>
+</resources>

@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/height_top_bar"-->
+        <!--android:background="@color/common_top_bar_blue" >-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_back"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:onClick="back"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/top_bar_back" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/view_temp"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_toRightOf="@id/iv_back"-->
+            <!--android:background="@color/theme_primary_light" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@id/view_temp"-->
+            <!--android:text="登录"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="18sp" />-->
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dip"
+            android:layout_marginTop="50dip"
+            android:src="@drawable/icon_login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_login_userName"
+                android:textColor="@color/color_404040"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/cgt_et_userName"
+                style="@style/cgt_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_hint_login_userName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_login_pwd"
+                android:textColor="@color/color_404040"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/cgt_et_password"
+                style="@style/cgt_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_hint_login_pwd"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cgt_btn_login"
+            style="@style/cgt_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:text="@string/text_login_btn" />
+
+        <Button
+            android:id="@+id/cgt_btn_regist"
+            style="@style/cgt_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:text="@string/text_regist_btn" />
+    </LinearLayout>
+</LinearLayout>

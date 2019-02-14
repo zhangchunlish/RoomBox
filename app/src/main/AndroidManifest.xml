@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="de.andreasschrade.androidtemplate">
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--获取震动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:name="de.andreasschrade.androidtemplate.ui.base.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Main">
+
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.quote.ListActivity" >
+        </activity>
+        <activity android:name=".ui.quote.RoomListActivity" >
+        </activity>
+        <activity android:name=".ui.user.LoginActivity" >
+        </activity>
+        <activity android:name=".ui.user.RegistActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.user.LoginActivity" />
+        </activity>
+        <activity android:name=".ui.quote.ArticleDetailActivity"
+            android:label=""
+            android:parentActivityName=".ui.quote.RoomListActivity"/>
+        <activity android:name=".ui.ViewSamplesActivity"
+            android:label="Samples"
+            android:parentActivityName=".ui.quote.RoomListActivity"/>
+        <activity android:name=".ui.quote.RoomRegistActivity"
+            android:label="Room Regist"
+            android:parentActivityName=".ui.quote.RoomListActivity"/>
+        <activity android:name=".ui.quote.RoomModifyActivity"
+            android:label="Room Modify"
+            android:parentActivityName=".ui.quote.RoomListActivity"/>
+        <activity android:name=".ui.user.ModifyActivity"
+            android:label="User Setting"
+            android:parentActivityName=".ui.user.ListActivity"/>
+        <activity android:name=".ui.user.ListActivity"
+            android:label="User List"/>
+    </application>
+
+</manifest>

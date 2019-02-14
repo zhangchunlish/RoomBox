@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:title="搜索"
+        android:textSize="14sp"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:visible="false"/>
+    <item
+        android:id="@+id/user_logout"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_user"
+        android:title="@string/user_logout"/>
+    <item
+        android:id="@+id/pwd_modify"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_user"
+        android:title="@string/pwd_modify"/>
+</menu>
